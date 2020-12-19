@@ -10,11 +10,11 @@ import org.springframework.web.bind.annotation.RestController;
 
 
 @RestController
-@RequestMapping("/v1/dashboard")
 public class Prueba {
 	
 	
-	  @GetMapping(path = "", produces = MediaType.APPLICATION_JSON_VALUE)
+
+	  @RequestMapping("/hello")
 	  public String  getByCode()
 	  {
 	  return "Hola";
